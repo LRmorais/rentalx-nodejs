@@ -7,6 +7,9 @@ class Category {
   created_at: Date;
 
   constructor() {
+    this.name = "";
+    this.description = "";
+    this.created_at = new Date();
     if (!this.id) {
       this.id = uuidV4();
     }
